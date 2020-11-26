@@ -9,7 +9,7 @@ class Calendrier {
     }
 }
 const janvier = new Calendrier("Janvier", 31)
-const fevrier = new Calendrier("Fevrier", 28)
+const fevrier = new Calendrier("Février", 28)
 const mars = new Calendrier("Mars", 31)
 const avril = new Calendrier("Avril", 30)
 const mai = new Calendrier("Mai", 31)
@@ -25,11 +25,11 @@ const newCalendrier = new Array(janvier, fevrier, mars, avril, mai, juin, juille
 
 let dateDeBase = 2020 // année de référence
 let dateToday = new Date() // date du jour
-let annee = date.getFullYear() // l'année du moment 
+let annee = dateToday.getFullYear() // l'année du moment 
 let nbr = 0 // chiffre de repère
 // tant que date n'est pas égale à 2020 + 4 alors date = 2020 + 4 et ainsi de suite jusqu'à 2060
 while (dateDeBase != annee && dateDeBase < 2065) {
-    dateBase+=4
+    dateDeBase+=4
     nbr++
 }
 if(nbr <= 10 ){
