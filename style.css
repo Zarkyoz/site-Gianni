@@ -1,0 +1,459 @@
+@font-face{
+    font-family: "CarolineWilson";
+    src: url("police/CarolineWilson.ttf");
+}
+body{
+    margin: 0;
+    padding: 50px;
+    /* height: 500vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background-color: rgb(25, 25, 25);
+    /* background-color: white; */
+    /* background-color: rgb(0, 65, 139); */
+}
+#headerSombre{
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+#imgHeader{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fond.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: black 7px 7px 30px ;
+}
+#enTete{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo{
+    width: 400px;
+    height: 400px;
+}
+#titre{
+    margin-left: 30px;
+}
+#titre h1{
+    margin: 0;
+    color: rgb(5, 215, 251);
+    font-size: 50px;
+}
+#titre span{
+    color: rgb(255, 173, 0);
+    font-size: 60px;
+}
+#titre p{
+    margin: 0;
+    color: rgb(5, 215, 251);
+    font-size: 30px;
+    
+}
+main{
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Barre de navigation */
+#rubrique{
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#rubrique a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+#rubrique a button{
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+    /* background-color: rgb(100, 100, 100); */
+    color: rgb(5, 215, 251);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: solid 0.5px rgb(255, 173, 0);
+    border-radius: 0.1em;
+    padding: 30px;
+}
+#rubrique a button span::first-letter{
+    color:  rgb(255, 173, 0);
+}
+#rubrique a:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+/* Début du contenu de la page */
+.containerBig{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    /* border: solid springgreen; */
+    color: white;
+}
+.container h1{
+    text-align: center;
+    color: rgb(5, 215, 251);
+    font-size: 32px;
+}
+.container h1::first-letter{
+    color:  rgb(255, 173, 0);
+}
+.axeF{
+    color: rgb(5, 215, 251);
+    width: 90%;
+}
+.orange{
+    color:  rgb(255, 173, 0);
+}
+
+/* Partie contenu de formation */
+.sessionActive{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* .sessionActive h2{
+    
+} */
+
+
+/* Partie 'nos axes de formation' */
+
+
+#tableAxeF{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+#tableAxeF span{
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border: solid rgb(5, 215, 251);
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    /* background-color: rgb(5, 215, 251); */
+    background-color: rgb(30, 30, 30);
+    color:  rgb(5, 215, 251);
+}
+#tableAxeF span:hover{
+    transition: transform 1s;
+    transform: scale(1.04);
+}
+#tableAxeF span:nth-child(1){
+    background-color:  rgb(255, 173, 0);
+    border: solid rgb(5, 215, 251);
+    border: solid rgb(255, 173, 0);
+    background-color: rgb(30, 30, 30);
+    color:  rgb(255, 173, 0);
+}
+#containerBaseAxeF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border-radius: 1em;
+}
+
+#containerBaseAxeF h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.axeFormation{
+    transform: translateY(20px);
+    z-index: 2;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    border: solid 1px rgb(255, 173, 0);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.axeFormation:nth-child(3), .axeFormation:nth-child(4){
+    display: none;
+}
+.axeFormation img{
+    height: 450px;
+    width: 50%;
+}
+.axeF_text{
+    width: 50%;
+    text-align: center;
+}
+.axeF_text h3{
+    color: rgb(255, 173, 0);
+    font-size: 22px;
+}
+
+/* Partie du calendrier */
+
+#calendrier{
+    /* border: solid purple; */
+    width:90%;
+    height:500px;
+    display: flex;
+    flex-direction: row;
+}
+.flecheCalendrier{
+    border: solid rgb(5, 215, 251);
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.flecheCalendrier:nth-child(1){
+    /* border: solid purple; */
+    border-right: none;
+}
+.flecheCalendrier:nth-child(1):hover{
+    border: solid rgb(255, 173, 0);
+    border-right: none;
+}
+.flecheCalendrier:nth-child(3){
+    /* border: solid purple; */
+    border-left: none;
+}
+.flecheCalendrier:nth-child(3):hover{
+    border: solid rgb(255, 173, 0);
+    border-left: none;
+}
+.flecheCalendrier span{
+    color: rgb(5, 215, 251);
+}
+.flecheCalendrier:hover span{
+    color:rgb(255, 173, 0);
+    border: rgb(255, 173, 0);
+}
+.flecheCalendrier:hover{
+    border: rgb(255, 173, 0);
+}
+#affichageCalendrier{
+    border-top: solid  rgb(5, 215, 251);;
+    border-bottom: solid  rgb(5, 215, 251);;
+    width: 80%;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+
+
+
+
+@media (max-width:950px){
+    header{
+        height: 50vh;
+    }
+    #logo{
+        width: 300px;
+        height: 300px;
+    }
+    #rubrique{   
+        height: 100px;
+    }
+    #titre{
+        margin: 10px;
+    }
+    #titre h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #titre span{
+        font-size: 42px;
+    }
+    #titre p{
+        font-size: 25px;
+        text-align: center;
+    }
+    /* partie Contenu */
+    .axeFormation{
+        flex-direction: column;
+    }
+    .axeFormation img{
+        height: 100%;
+        /* width: 100%; */
+    }
+    .axeF_text{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* partie calendrier */
+    .flecheCalendrier{
+        border: solid yellow;
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+}
+
+
+
+@media (max-width:600px){
+    body{
+        padding: 10px;
+}
+    header{
+        /* border: solid blue; */
+        margin: 0;
+        padding: 0;
+    }
+    #imgHeader{
+        position: absolute;
+        background-position: center;
+        background-size: 200%;
+
+    }
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+    main{
+        position: relative;
+        margin: 30px;
+        height: 100%;
+    }
+    #enTete{
+        /* width: 100%; */
+        position: relative;
+        /* border: solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #rubrique{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #rubrique section{
+        width: 90%;
+        height: 100px;
+        font-size: 20px;
+        border-radius: 0;
+        margin: 10px;
+        box-shadow: orangered 3px 3px 10px ;
+    }
+    #titre{
+        margin: 10px;
+    }
+    #titre h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    #titre span{
+        font-size: 30px;
+    }
+    #titre p{
+        font-size: 18px;
+        text-align: center;
+    }
+    #rubrique section:hover{
+        transition: transform 0.5s;
+        transform: scale(1.05);
+    
+    }
+
+    /* Partie contenu */
+    #tableAxeF span{
+        width: 100%;
+        font-size: 12px;
+    }
+    .axeFormation{
+        flex-direction: column;
+    }
+    .axeFormation img{
+        height: 100%;
+        width: 100%;
+    }
+    .axeF_text{
+        width: 100%;
+        text-align: center;
+    }
+    .axeF_text h3{
+        color: rgb(255, 173, 0);
+        font-size: 22px;
+    }
+
+    /* partie calendrier */
+    .flecheCalendrier{
+        border: solid yellow;
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+}
