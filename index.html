@@ -7,7 +7,7 @@
     <!-- <meta http-equiv="refresh" content="2"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logoBar.png" type="image/png">
-    <title>Accueil</title>
+    <title>Formation d'animation touristique</title>
 </head>
 
 <body>
@@ -20,161 +20,44 @@
             </section>
             <section id="titre">
                 <h1>ANIM <span>G</span> FORMATION</h1>
-                <p>Pionniers de la formation d’animateur en ligne</p>
+                <p>Formation à distance d'animateurs touristiques</p>
             </section>
         </article>
-
+        
     </header>
+    <article id="rubrique">
+        <a href="#"><button><span>Home</span></button></a>
+        <a href="contenu.html"><button><span>Contenu de la formation</span></button></a>
+        <a href="#tarif"><button><span>Financement</span></button></a>
+        <a href="#calender"><button><span>Calendrier</span></button></a>
+        <a href="#qui"><button><span>Qui sommes nous ?</span></button></a>
+
+    </article>
     <main>
-        <article id="rubrique">
-            <a href="#contenu"><button><span>Contenu de la formation</span></button></a>
-            <a href="#tarif"><button><span>Tarif</span></button></a>
-            <a href="#calender"><button><span>Calendrier</span></button></a>
-            <a href="#qui"><button><span>Qui sommes nous ?</span></button></a>
-
-        </article>
-        <article class="containerBig">
-
-            <!-- contenue -->
-            <section id="contenu" class="container">
-                <h1>Contenu de la formation</h1>
-
-                <article class="axeF sessionActive">
-                    <section>
-                        <h3><span class="orange">NOMBRE D’ELEVES PAR SESSION :</span> 12 (6 par formateur)</h3>
-                        <h3><span class="orange">TARIF :</span> A DEFINIR EN COLLABORATION AVEC L’ENTREPRISE</h3>
-                    </section>
-                    <section>
-                        <h3><span class="orange">DUREE :</span> 1 MOIS</h3>
-                        <h3><span class="orange">NOMBRE D’HEURES :</span> 120h</h3>
-                        <h6>SESSION TOUTE L’ANNEE</h6>
-                    </section>
-
-                </article>
-                <!-- </article> -->
-
-                <!-- second cadre -->
-                <!-- <article class="container"> -->
-                <article class="axeF">
-                    <h2>NOS AXES DE FORMATION</h2>
-                    <section id="containerAxeF">
-
-
-                        <article id="tableAxeF">
-                            <span class="btnAxeF">SPORTS</span>
-                            <span class="btnAxeF">TECHNIQUES MICROS</span>
-                            <span class="btnAxeF">INTEGRATION ET VIE EN ENTREPRISE</span>
-                        </article>
-
-                        <article id="containerBaseAxeF">
-                            <section class="cadrePlus"></section>
-                            <section class="axeFormation">
-                                <article class="axeF_text">
-                                    <h3>FORMATION SPORTS:</h3>
-                                    <h4>Techniques d’encadrement et d’organisations sportives</h4>
-                                    <h4>Analyses vidéos</h4>
-                                    <h4>Mises en situation et tests d’évaluation</h4>
-                                </article>
-                                <img src="images/sport.jpg" alt="">
-                            </section>
-
-
-                            <section class="axeFormation">
-                                <img src="images/micro.jpg" alt="">
-                                <article class="axeF_text">
-                                    <h3>FORMATION TECHNIQUES MICRO:</h3>
-                                    <h4>Techniques d’ambiance et de présentations micro</h4>
-                                    <h4>Analyses vidéos</h4>
-                                    <h4>Ateliers création et montage audio, tests d’évaluation</h4>
-                                </article>
-                            </section>
-
-
-                            <section class="axeFormation">
-                                <article class="axeF_text">
-                                    <h3>FORMATION INTEGRATION ET VIE EN ENTREPRISE:</h3>
-                                    <h4>Relations humaines entre animateurs, responsable d’animation, responsables de
-                                        service, direction
-                                        et personnels du
-                                        site touristique</h4>
-                                    <h4>Vie en communauté et règles d’hygiène</h4>
-                                    <h4>Préparation administrative et vestimentaire d’avant-saison</h4>
-                                    <h4>Initiation à la charte et au code de travail de l’entreprise</h4>
-                                    <h4>Gestion de conflits</h4>
-                                </article>
-                                <img src="images/entreprise.jpg" alt="">
-                            </section>
-
-                        </article>
-
-
-                    </section>
-                </article>
-
-
-
-            </section>
-
-            <!-- tarif pop-up -->
-            <section id="tarif" class="container">
-                <h1>Tarif</h1>
-            </section>
-
-            <!-- calendrier -->
-            <section id="calender" class="container">
-                <h1>Calendrier</h1>
-                <article id="calendrier">
-                    <section class="flecheCalendrier"><article></article></section>
-                    <section id="affichageCalendrier"></section>
-                    <section class="flecheCalendrier"><article></article></section>
-                </article>
-            </section>
-
-            <!-- Qui sommes nous ? pop-up -->
-            <section id="qui" class="container">
-                <h1>Qui sommes nous ?</h1>
-            </section>
-        </article>
     </main>
-    <script>
-        var btn_axe_f = document.getElementsByClassName('btnAxeF');
-        var text_axe_f = document.getElementsByClassName('axeFormation')
 
-        activeBtnAxeFormation(btn_axe_f[0], btn_axe_f[1], btn_axe_f[2], text_axe_f[0], text_axe_f[1], text_axe_f[2])
-        activeBtnAxeFormation(btn_axe_f[1], btn_axe_f[0], btn_axe_f[2], text_axe_f[1], text_axe_f[0], text_axe_f[2])
-        activeBtnAxeFormation(btn_axe_f[2], btn_axe_f[0], btn_axe_f[1], text_axe_f[2], text_axe_f[0], text_axe_f[1])
+    <footer>
+        <h1>Nos réseaux</h1>
+        <article class="reseau" id="partenaire">
+            <!-- <span>FRAM</span> -->
+            <img src="images/fram.png" alt="fram">
+            <!-- <span>MISSION LOCALE DE DOUAI</span> -->
+            <img src="images/ML-douais.png" alt="MLDouais">
+            <!-- <span>POLE EMPLOI</span> -->
+            <img src="images/pole-emploi.png" alt="pole-emploi">
 
-
-
-        function activeBtnAxeFormation(btnUn, btnDeux, btnTrois, textUn, textDeux, textTrois) {
-            btnUn.addEventListener('click', () => {
-                // btnUn.style.backgroundColor = "rgb(255, 173, 0)"
-                // btnUn.style.color =" rgb(5, 215, 251)"
-                // btnUn.style.border = "solid  rgb(5, 215, 251)"
-                btnUn.style.color =" rgb(255, 173, 0)"
-                btnUn.style.border = "solid  rgb(255, 173, 0)"
-                textUn.style.display = "flex"
-
-                // btnDeux.style.backgroundColor = " rgb(5, 215, 251)"
-                // btnDeux.style.color ="rgb(255, 173, 0)"
-                // btnDeux.style.border = "solid rgb(25,25,25)"
-                btnDeux.style.color ="rgb(5, 215, 251)"
-                btnDeux.style.border = "solid rgb(5, 215, 251)"
-                textDeux.style.display = "none"
-
-                // btnTrois.style.backgroundColor = " rgb(5, 215, 251)"
-                // btnTrois.style.color ="rgb(255, 173, 0)"
-                // btnTrois.style.border = "solid rgb(25,25,25)"
-                btnTrois.style.color ="rgb(5, 215, 251)"
-                btnTrois.style.border = "solid rgb(5, 215, 251)"
-                textTrois.style.display = "none"
-            })
-
-        }
-
-    </script>
-    <!-- <script src="app.js"></script> -->
-    <script type="text/javascript" src="calendrier.js"></script>
+        </article>
+        <article class="reseau" id="social">
+            <!-- <span>facebook</span> -->
+            <a href="https://www.facebook.com/animgformation"><img src="images/facebook.png" alt="facebook"></a>
+            <!-- <span>indeed</span> -->
+            <img src="images/instagram.png" alt="instagram">
+            <!-- <span>INSTAGRAM</span> -->
+            <img src="images/indeed.png" alt="indeed">
+        </article>
+    </footer>
+    <script src="app.js"></script>
+    <!-- <script type="text/javascript" src="calendrier.js"></script> -->
 </body>
 
 </html>
