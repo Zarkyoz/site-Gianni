@@ -460,6 +460,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 footer h1{
     /* border: solid black; */

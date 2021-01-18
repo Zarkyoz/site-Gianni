@@ -1,0 +1,110 @@
+/* orange 
+    color: rgb(255, 173, 0); */
+
+/* bleu
+    color: rgb(5, 215, 251); */
+
+    
+#display_contenu{
+    /* border: solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#first_contenu{
+    width: 80%;
+    margin: 50px;
+    background-color: white;
+    padding-top: 50px;
+    box-shadow: 5px 5px 15px black;
+}
+#contenu_titre{
+    text-align: center;
+    color: rgb(255, 173, 0);
+    font-size: 30px;
+}
+#display_contenu img{
+    width: 250px;
+    box-shadow: 5px 5px 15px black;
+}
+.contenu_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.contenu_container p{
+    width: 70%;
+    font-size: large;
+}
+#second_contenu{
+    width: 100%;
+    /* margin: 50px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+}
+.axe{
+    width: 17%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+.axe:nth-child(odd){
+    background-color:  rgb(5, 215, 251);
+    /* color: rgb(255, 173, 0); */
+}
+.axe:nth-child(even){
+    background-color:  rgb(255, 173, 0);
+    /* color: rgb(5, 215, 251); */
+}
+#third_contenu{
+    width: 80%;
+    background-color: white;
+    margin: 50px;
+    box-shadow: 5px 5px 15px black;
+}
+#container_button{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.button_direction{
+    text-align: center;
+    box-shadow: 5px 5px 15px black;
+}
+.button_direction:nth-child(odd) {
+    background-color: rgb(255, 173, 0);
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}
+.button_direction:nth-child(even){
+    background-color: rgb(5, 215, 251);
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}
+
+/* #fourth_contenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#fourth_contenu img{
+    margin-right: 20px;
+}
+#fourth_contenu #container_button{
+    margin-left: 40px;
+} */

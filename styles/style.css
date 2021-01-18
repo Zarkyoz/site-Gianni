@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../police/league-spartan-master/webfonts/');
+    src: url('../police/league-spartan-master/webfonts/?#iefix') format('embedded-opentype'),
+         url('../police/league-spartan-master/webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('../police/league-spartan-master/webfonts/leaguespartan-bold.woff') format('woff'),
+         url('../police/league-spartan-master/webfonts/leaguespartan-bold.ttf') format('truetype'),
+         url('../police/league-spartan-master/webfonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan";
+}
+#headerSombre{
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+}
+#imgHeader{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/fond.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: black 7px 7px 30px ;
+}
+#enTete{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo{
+    width: 400px;
+    height: 400px;
+}
+#titre{
+    margin-left: 30px;
+}
+#titre h1{
+    margin: 0;
+    color: rgb(5, 215, 251);
+    font-size: 50px;
+}
+#titre span{
+    color: rgb(255, 173, 0);
+    font-size: 60px;
+}
+#titre p{
+    margin: 0;
+    color: rgb(5, 215, 251);
+    font-size: 30px;
+    
+}
+
+/* Barre de navigation */
+#rubrique{
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    /* height: 5vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#rubrique a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+#rubrique a button{
+    cursor: pointer;
+    background-color: rgba(25, 25, 25);
+    /* color: rgb(5, 215, 251); */
+    color:rgb(255, 173, 0);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: solid 0.5px rgb(5, 215, 251);
+    border-radius: 0.1em;
+    padding: 30px;
+    font-family: "League Spartan";
+}
+#rubrique a:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+}
+#rubrique a:hover button{
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+main{
+    width: 100%;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  rgba(5, 214, 251, 0.2);
+}
+footer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(  rgba(5, 214, 251, 0.2), rgb(5, 215, 251), rgb(255, 173, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+footer h1{
+    padding: 10px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+.reseau{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.reseau img{
+    padding: 10px;
+}
+#partenaire img{
+    height: 120px;
+}
+#social img{
+    width: 40px;
+    height: 40px;
+}
+
+
+@media (max-width:950px){
+    header{
+        height: 50vh;
+    }
+    #logo{
+        width: 300px;
+        height: 300px;
+    }
+    #rubrique{   
+        height: 100px;
+    }
+    #titre{
+        margin: 10px;
+    }
+    #titre h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #titre span{
+        font-size: 42px;
+    }
+    #titre p{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width:600px){
+    body{
+        padding: 10px;
+}
+    header{
+        /* border: solid blue; */
+        margin: 0;
+        padding: 0;
+    }
+    #imgHeader{
+        position: absolute;
+        background-position: center;
+        background-size: 200%;
+
+    }
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+    main{
+        position: relative;
+        margin: 30px;
+        height: 100%;
+    }
+    #enTete{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #rubrique{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #rubrique section{
+        width: 90%;
+        height: 100px;
+        font-size: 20px;
+        border-radius: 0;
+        margin: 10px;
+        box-shadow: orangered 3px 3px 10px ;
+    }
+    #titre{
+        margin: 10px;
+    }
+    #titre h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    #titre span{
+        font-size: 30px;
+    }
+    #titre p{
+        font-size: 18px;
+        text-align: center;
+    }
+    #rubrique section:hover{
+        transition: transform 0.5s;
+        transform: scale(1.05);
+    
+    }
+}
