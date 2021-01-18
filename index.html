@@ -23,17 +23,91 @@
                 <p>Formation à distance d'animateurs touristiques</p>
             </section>
         </article>
-        
+
     </header>
     <article id="rubrique">
-        <a href="#"><button><span>Home</span></button></a>
-        <a href="contenu.html"><button><span>Contenu de la formation</span></button></a>
-        <a href="#tarif"><button><span>Financement</span></button></a>
-        <a href="#calender"><button><span>Calendrier</span></button></a>
-        <a href="#qui"><button><span>Qui sommes nous ?</span></button></a>
+        <a href="index.html"><button><span>ACCUEIL</span></button></a>
+        <a href="contenu.html"><button><span>NOTRE FORMATION</span></button></a>
+        <a href="cessions.html"><button><span>NOS CESSIONS</span></button></a>
+        <a href="recrutement.html"><button><span>RECRUTEMENT</span></button></a>
+        <a href="qui.html"><button><span>QUI SOMMES NOUS ?</span></button></a>
+        <a href="tarif.html"><button><span>FINANCEMENT</span></button></a>
 
     </article>
     <main>
+        <!-- Contenu de la page -->
+        <article id="display_accueil_un">
+            <img src="images/accueil_1.png" alt="">
+            <h1>VOTRE CARRIERE D'ANIMATEUR <br> COMMENCE ICI</h1>
+        </article>
+
+        <article id="display_accueil_deux">
+            <section class="accueil_question">
+                <article class="accueil_question_text">
+                    <h2>Vous hésitez à vous inscrire ou vous souhaitez être informés ?</h2>
+                    <ul>
+                        
+                        <li>Nous vous proposons pas moins de 6 réunions d'information en visioconférence tout au long de
+                            l'année</li>
+                        </ul>
+                    </article>
+            </section>
+
+            <section class="accueil_question">
+                <article class="accueil_question_text">
+
+                    <h2>Vous souhaitez trouver un emploi rapidement ?</h2>
+                    <ul>
+                        
+                        <li>Notre formation est rapide et grâce à notre réseau de partenaires employeurs vous accédez tout
+                            de suite à un emploi</li>
+                        </ul>
+                    </article>
+                    </section>
+
+            <section class="accueil_question">
+                <article class="accueil_question_text">
+
+                    <h2>Vous désirez être qualifié, certifié et performant ?</h2>
+                    <ul>
+                        
+                        <li>Nous vous formons aux différentes missions essentielles : Sports, animation micro, arts de la
+                            scène, accueil client</li>
+                            <li>Notre formation aboutit à la certification de Niveau VI</li>
+                        </ul>
+                    </article>
+            </section>
+
+            <section class="accueil_question">
+                <article class="accueil_question_text">
+
+                    <h2>Vous recherchez une formation qui vous reconnaisse ?</h2>
+                    <ul>
+                        
+                        <li>Nos promotions ne dépassent pas 6 élèves pour permettre au formateur de répondre à vos besoins</li>
+                        <li>3 bilans avec le formateur sont prévus durant votre 1er contrat d'animateur</li>
+                    </ul>
+                </article>
+                </section>
+                
+                <section class="accueil_question">
+                    <article class="accueil_question_text">
+
+                        <h2>Vous êtes perdus ou hésitez sur votre avenir dans le métier après votre première saison ?</h2>
+                        <ul>
+                            
+                            <li>Vos formateurs organisent des rencontres pour vous accompagner dans vos choix de perspective
+                                d'avenir</li>
+                            </ul>
+                        </article>
+            </section>
+
+        </article>
+
+
+
+
+
     </main>
 
     <footer>
@@ -45,7 +119,7 @@
             <img src="images/ML-douais.png" alt="MLDouais">
             <!-- <span>POLE EMPLOI</span> -->
             <img src="images/pole-emploi.png" alt="pole-emploi">
-            
+
         </article>
         <h1>NOS RESEAUX</h1>
         <article class="reseau" id="social">
@@ -57,8 +131,146 @@
             <img src="images/indeed.png" alt="indeed">
         </article>
     </footer>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
     <!-- <script type="text/javascript" src="calendrier.js"></script> -->
+    <script>
+
+        // récupération des sections class accueil_question
+        let accueilQuestion = document.getElementsByClassName('accueil_question')
+        let accueilQuestiontext = document.getElementsByClassName('accueil_question_text')
+        let body = document.querySelector('body')
+
+        // variable on/off pour chaque acceuilQuestion
+
+        let accueilQuestionUn = 0
+        let accueilQuestionDeux = 0
+        let accueilQuestionTrois = 0
+        let accueilQuestionQuatre = 0
+        let accueilQuestionCinq = 0
+
+        // document.addEventListener('scroll', function scrollingAccueil(question, actif){
+        //     if(window.scrollY >= question - (window.innerHeight /2) && actif == 0){
+        //         actif = 1
+        //         console.log(actif)
+        //     }
+        // })
+document.addEventListener('scroll', ()=>{
+
+    for (let i = 0; i < accueilQuestion.length; i++) {
+            if(window.scrollY >= accueilQuestion[i].offsetTop - ((window.innerHeight /2)+(window.innerHeight/3))){
+
+
+                // function pour le défilement des questions
+
+                function defilementVersDroite(position, opac, text, marge){
+                 
+                    let interval = setInterval(function(){
+                        if(position <= 5){
+                            text.style.opacity = opac
+                            opac+=0.1
+                            if(opac >= 1){
+                                clearInterval(interval)     
+                            }
+                        }else{
+                            accueilQuestion[i].style.marginRight = position + '%'
+                            position-=5
+                        }
+                        console.log(position);
+                    }, 50)
+                }
+
+                function defilementVersGauche(position, opac, text, marge){
+                 
+                 let interval = setInterval(function(){
+                     if(position <= 5){
+                         text.style.opacity = opac
+                         opac+=0.1
+                         if(opac >= 1){
+                             clearInterval(interval)     
+                         }
+                     }else{
+                         accueilQuestion[i].style.marginLeft = position + '%'
+                         position-=5
+                     }
+                     console.log(position);
+                 }, 40)
+             }
+
+
+
+
+        switch (i) {
+            case 0:
+                let positionUn = 100
+                let opacUn = 0
+                if(accueilQuestionUn == 0){
+                    defilementVersDroite(positionUn, opacUn, accueilQuestiontext[i], )
+                    accueilQuestionUn = 1
+                    }
+                break;
+ 
+            case 1:
+                let positionDeux = 100
+                let opacDeux = 0
+            if(accueilQuestionDeux == 0){
+                        // console.log('yop2')
+                        defilementVersGauche(positionDeux, opacDeux, accueilQuestiontext[i])
+                        accueilQuestionDeux = 1
+                    }
+                break;
+            case 2:
+            let positionTrois = 100
+                let opacTrois = 0
+            if(accueilQuestionTrois == 0){
+                        console.log('yop3')
+                        defilementVersDroite(positionTrois, opacTrois, accueilQuestiontext[i], )
+                        accueilQuestionTrois = 1
+                    }
+                break;
+            case 3:
+            let positionQuatre = 100
+                let opacQuatre = 0
+            if(accueilQuestionQuatre == 0){
+                        console.log('yop4')
+                        defilementVersGauche(positionQuatre, opacQuatre, accueilQuestiontext[i])
+                        accueilQuestionQuatre = 1
+                    }
+                break;
+
+            case 4:
+            let positionCinq = 100
+                let opacCinq = 0
+            if(accueilQuestionCinq == 0){
+                        console.log('yop5')
+                        defilementVersDroite(positionCinq, opacCinq, accueilQuestiontext[i], )
+                        accueilQuestionCinq = 1
+                    }
+                break;
+        
+
+
+            default:
+                break;
+        }
+
+    }
+    // console.log(accueilQuestionUn)
+        // console.log(i)
+    }
+})
+
+
+
+
+        // console.log(accueilQuestion[1].offsetTop)
+
+        // function question gauche
+        // function question droite
+        // function affichage question
+
+
+
+    </script>
 </body>
 
 </html>

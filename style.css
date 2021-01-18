@@ -2,9 +2,13 @@
     font-family: "CarolineWilson";
     src: url("police/CarolineWilson.ttf");
 }
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
-    padding: 0px;
+    padding: 0;
     /* height: 500vh; */
     display: flex;
     flex-direction: column;
@@ -13,7 +17,7 @@ body{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     /* background-color: rgb(25, 25, 25); */
     /* background-color:rgb(5, 215, 251); */
-    background-color:rgb(255, 255, 255);
+    /* background-color:rgb(255, 255, 255); */
     /* background-color: rgb(0, 65, 139); */
 }
 #headerSombre{
@@ -78,16 +82,6 @@ header{
     font-size: 30px;
     
 }
-main{
-    width: 100%;
-    /* background-color: rgb(40, 40, 40); */
-    /* background-color: rgb(255, 255, 255); */
-    margin-top: 50px;
-    margin-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* Barre de navigation */
 #rubrique{
@@ -109,10 +103,7 @@ main{
 }
 #rubrique a button{
     cursor: pointer;
-    background-color: rgb(51, 51, 51);
-    background-color: rgb(25, 25, 25);
-    /* background-color: rgb(107, 107, 107); */
-    /* background-color: rgb(100, 100, 100); */
+    background-color: rgba(255, 174, 0);
     color: rgb(5, 215, 251);
     font-size: 25px;
     display: flex;
@@ -120,19 +111,103 @@ main{
     align-items: center;
     width: 100%;
     height: 100%;
-    border: solid 0.5px rgb(255, 173, 0);
+    border: solid 0.5px rgb(5, 215, 251);
     border-radius: 0.1em;
     padding: 30px;
 }
 #rubrique a button span::first-letter{
-    color:  rgb(255, 173, 0);
+    /* color:  rgb(255, 173, 0); */
 }
 #rubrique a:hover{
     transition: all 1s;
     transform: scale(1.1);
 }
+#rubrique a:hover button{
+    transition: all 1s;
+    transform: scale(1.1);
+    background-color: rgb(5, 215, 251 );
+    color: rgb(255, 174, 0);
+    border: solid 0.5px  rgb(255, 174, 0);
+}
 
-/* Début du 'conten'u de la page */
+main{
+    width: 100%;
+    /* background-color: rgb(40, 40, 40); */
+    /* background-color: rgb(255, 255, 255); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(5, 214, 251, 0.2);
+
+    /* align-items: center; */
+    /* border: solid 1px purple; */
+}
+
+/* Début du contennu de la page ACCUEIL */
+#display_accueil_un{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#display_accueil_deux{
+    /* border: solid 5px blue; */
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.accueil_question{
+    height: 150px;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.accueil_question:nth-child(odd){
+    background-color: rgb(5, 215, 251 );
+    position: relative;
+    left: -40px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 100%;
+    box-shadow: 5px 5px 15px black;
+    transform: skew(15deg, 0);
+    /* width: 100%; */
+}
+.accueil_question:nth-child(odd) h2{
+    transform: skew(-15deg, 0);
+}
+.accueil_question:nth-child(odd) ul{
+    transform: skew(-15deg, 0);
+}
+.accueil_question:nth-child(even){
+    /* border: solid rgb(5, 215, 251 ); */
+    position: relative;
+    left: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(255, 174, 0);
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-left: 100%;
+    box-shadow: -5px 5px 15px black;
+    transform: skew(-15deg, 0);
+}
+.accueil_question:nth-child(even) h2{
+    transform: skew(15deg, 0);
+}
+.accueil_question:nth-child(even) ul{
+    transform: skew(15deg, 0);
+}
+.accueil_question_text{
+    opacity: 0;
+}
+
+/* Début du contenu de la page BOS CESSIONS*/
 .containerBig{
     width: 100%;
 }
@@ -362,7 +437,7 @@ main{
 footer{
     width: 100%;
     height: 100%;
-    background: linear-gradient( white, rgb(5, 215, 251), rgb(255, 173, 0));
+    background: linear-gradient(  rgba(5, 214, 251, 0.2), rgb(5, 215, 251), rgb(255, 173, 0));
     /* background: linear-gradient( rgb(5, 215, 251), rgb(255, 173, 0)); */
     display: flex;
     flex-direction: column;
@@ -373,7 +448,7 @@ footer h1{
     /* border: solid black; */
     padding: 10px;
     margin: 0;
-    color: rgb(5, 215, 251);
+    /* color: rgb(5, 215, 251); */
     color: rgb(0, 0, 0);
     padding-top: 20px;
 }
