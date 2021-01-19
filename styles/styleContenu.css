@@ -39,25 +39,21 @@
     font-size: large;
 }
 #second_contenu{
-    width: 100%;
-    /* margin: 50px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* background-color: white; */
+    width: 70%;
+}
+#contenu_axe{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* box-shadow: 5px 5px 15px black; */
 }
 .axe{
     width: 17%;
-    /* height: 200px; */
-    font-size: 10px;
+    font-size: 8px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 1px;
     box-shadow: 5px 5px 15px black;
 }
 .axe:nth-child(odd){
