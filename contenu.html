@@ -178,7 +178,7 @@
             
             
             axeText[i].style.top = axe[i].offsetHeight  + "px"
-            axeText[i].style.width = axe[i].offsetWidth + "px"
+            axeText[i].style.width = axe[i].offsetWidth-1 + "px"
             axe[i].addEventListener('mouseenter', () => {
                 axe[i].style.transform = "scale(1.7)"
                 axe[i].style.zIndex = 2
