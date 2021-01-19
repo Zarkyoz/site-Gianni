@@ -11,13 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px;
     background-color: white;
     box-shadow: 5px 5px 15px black;
 }
 #first_contenu{
     width: 100%;
-    margin: 50px;
+    /* margin: 50px; */
     padding-top: 50px;
 }
 #contenu_titre{
@@ -49,6 +49,8 @@
     justify-content: space-around;
 }
 .axe{
+    cursor: pointer;
+    position: relative;
     width: 17%;
     font-size: 8px;
     text-align: center;
@@ -82,7 +84,7 @@
 #third_contenu{
     width: 100%;
     background-color: white;
-    margin: 50px;
+    /* margin: 50px; */
     /* box-shadow: 5px 5px 15px black; */
 }
 #container_button{
@@ -109,4 +111,7 @@
     padding: 20px;
     margin: 5px;
     width: 200px;
+}
+.shop{
+    top:50px;
 }

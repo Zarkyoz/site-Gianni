@@ -12,10 +12,6 @@
 </head>
 
 <body>
-    <article id="scroll">
-        <span>scroll</span>
-        <span>></span>
-    </article>
     <header>
         <article id="imgHeader"></article>
         <article id="headerSombre"></article>
@@ -57,6 +53,7 @@
                         <article id="contenu_axe">
                             <section class="axe">
                                 <h2>SPORTS</h2>
+                                <span>></span>
                                 <article class="axe_text">
                                     <span>
                                         Aménagement des sites d'activité <br>
@@ -69,6 +66,7 @@
                             </section>
                             <section class="axe">
                                 <h2>ARTS DE LA SCENE</h2>
+                                <span>></span>
                                 <article class="axe_text">
                                     <span>
                                         Technique de playback <br>
@@ -76,10 +74,12 @@
                                         Numéro visuel <br>
                                         Organisation en coulisse
                                     </span>
+
                                 </article>
                             </section>
                             <section class="axe">
                                 <h2>INTERACTIVITE MICRO</h2>
+                                <span>></span>
                                 <article class="axe_text">
                                     <span>
                                         Techniques d'animation micro <br>
@@ -91,6 +91,7 @@
                             </section>
                             <section class="axe">
                                 <h2>INTEGRATION ENTREPRISES</h2>
+                                <span>></span>
                                 <article class="axe_text">
                                     <span>
                                         Découvertes des différents services d'un village vacances <br>
@@ -102,6 +103,7 @@
                             </section>
                             <section class="axe">
                                 <h2>HYGIENE</h2>
+                                <span>></span>
                                 <article class="axe_text">
                                     <span>
                                         Entretenir les tenues professionnelles <br>
@@ -177,12 +179,29 @@
 
         let axe = document.getElementsByClassName('axe')
         let axeText = document.getElementsByClassName('axe_text')
-        
+
+        for (let e = 0; e < axe.length; e++) {
+            axe[e].children[1].style.transform = "rotate(90deg) scale(1,2)"
+            axe[e].children[1].style.position = "absolute"
+            axe[e].children[1].style.bottom = 0 + "px"
+            // switch (e) {
+            //     case 3:
+            //         axe[e].children[1].style.bottom = -20 + "px"
+                    
+            //         break;
+            
+            //         case 4:
+            //             axe[e].children[1].style.bottom = -20 + "px"
+                    
+            //         break;
+            //             default:
+            //                 break;
+            //             }
+        }
+
         for (let i = 0; i < axe.length; i++) {
-            
-            
-            axeText[i].style.top = axe[i].offsetHeight  + "px"
-            axeText[i].style.width = axe[i].offsetWidth-1 + "px"
+            axeText[i].style.top = axe[i].offsetHeight + "px"
+            axeText[i].style.width = axe[i].offsetWidth - 1 + "px"
             axe[i].addEventListener('mouseenter', () => {
                 axe[i].style.transform = "scale(1.7)"
                 axe[i].style.zIndex = 2
@@ -204,7 +223,7 @@
 
 
     </script>
-        <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
