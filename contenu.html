@@ -53,18 +53,58 @@
                         <article id="contenu_axe">
                             <section class="axe">
                                 <h2>SPORTS</h2>
+                                <article class="axe_text">
+                                    <span>
+                                        Aménagement des sites d'activité <br>
+                                        Connaissance du matériel d'activité <br>
+                                        Entretien, réparation et stockage du matériel d'activité <br>
+                                        Organisation de tournoi, petite et forte fréquentation <br>
+                                        Gestion de Communication sur Activité
+                                    </span>
+                                </article>
                             </section>
                             <section class="axe">
                                 <h2>ARTS DE LA SCENE</h2>
+                                <article class="axe_text">
+                                    <span>
+                                        Technique de playback <br>
+                                        Mîme humoristique <br>
+                                        Numéro visuel <br>
+                                        Organisation en coulisse
+                                    </span>
+                                </article>
                             </section>
                             <section class="axe">
                                 <h2>INTERACTIVITE MICRO</h2>
+                                <article class="axe_text">
+                                    <span>
+                                        Techniques d'animation micro <br>
+                                        Conception de soirées jeux <br>
+                                        Conception de soirées dansantes <br>
+                                        Conception de jeux musicaux
+                                    </span>
+                                </article>
                             </section>
                             <section class="axe">
                                 <h2>INTEGRATION ENTREPRISES</h2>
+                                <article class="axe_text">
+                                    <span>
+                                        Découvertes des différents services d'un village vacances <br>
+                                        Relation de travail avec la hiérarchie <br>
+                                        Module sur l'accueil et les relations avec les clients <br>
+                                        Relation de travail avec une équipe d'animation
+                                    </span>
+                                </article>
                             </section>
                             <section class="axe">
                                 <h2>HYGIENE</h2>
+                                <article class="axe_text">
+                                    <span>
+                                        Entretenir les tenues professionnelles <br>
+                                        Entretenir le logement de fonction <br>
+                                        Présentation face client <br>
+                                    </span>
+                                </article>
                             </section>
                         </article>
                     </section>
@@ -129,6 +169,37 @@
     </footer>
     <!-- <script src="app.js"></script> -->
     <!-- <script type="text/javascript" src="calendrier.js"></script> -->
+    <script type="text/javascript">
+
+        let axe = document.getElementsByClassName('axe')
+        let axeText = document.getElementsByClassName('axe_text')
+        
+        for (let i = 0; i < axe.length; i++) {
+            
+            
+            axeText[i].style.top = axe[i].offsetHeight  + "px"
+            axeText[i].style.width = axe[i].offsetWidth + "px"
+            axe[i].addEventListener('mouseenter', () => {
+                axe[i].style.transform = "scale(1.7)"
+                axe[i].style.zIndex = 2
+                axeText[i].style.display = "flex"
+                // axeText[i].style.border = "solid white"
+                axe[i].style.borderRadius = "1em 1em 0 0"
+            })
+
+            axe[i].addEventListener('mouseleave', () => {
+                axe[i].style.transform = "scale(1)"
+                axe[i].style.zIndex = 1
+                axeText[i].style.display = "none"
+                axe[i].style.borderRadius = "0em"
+
+            })
+        }
+
+
+
+
+    </script>
 </body>
 
 </html>

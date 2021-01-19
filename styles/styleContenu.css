@@ -53,19 +53,32 @@
     font-size: 8px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1px;
     box-shadow: 5px 5px 15px black;
 }
-.axe:nth-child(odd){
+.axe:nth-child(odd), .axe:nth-child(odd) .axe_text{
     background-color:  rgb(5, 215, 251);
     /* color: rgb(255, 173, 0); */
 }
-.axe:nth-child(even){
+.axe:nth-child(even), .axe:nth-child(even) .axe_text{
     background-color:  rgb(255, 173, 0);
     /* color: rgb(5, 215, 251); */
 }
+.axe_text{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    padding: 10px 1px 10px 1px;
+    border-radius: 0 0 1em 1em;
+}
+.axe_text span{
+    padding: 2px;
+}
+
+
 #third_contenu{
     width: 100%;
     background-color: white;
