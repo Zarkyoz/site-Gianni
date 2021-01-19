@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <article id="scroll">
+        <span>scroll</span>
+        <span>></span>
+    </article>
     <header>
         <article id="imgHeader"></article>
         <article id="headerSombre"></article>
@@ -122,7 +126,7 @@
     </footer>
     <!-- <script src="app.js"></script> -->
     <!-- <script type="text/javascript" src="calendrier.js"></script> -->
-    <script>
+    <script type="text/javascript">
 
         // récupération des sections class accueil_question
         let accueilQuestion = document.getElementsByClassName('accueil_question')
@@ -156,7 +160,6 @@
                                 accueilQuestion[i].style.marginRight = position + '%'
                                 position -= 5
                             }
-                            console.log(position);
                         }, 50)
                     }
 
@@ -173,7 +176,6 @@
                                 accueilQuestion[i].style.marginLeft = position + '%'
                                 position -= 5
                             }
-                            console.log(position);
                         }, 40)
                     }
 
@@ -191,7 +193,6 @@
                             let positionDeux = 100
                             let opacDeux = 0
                             if (accueilQuestionDeux == 0) {
-                                // console.log('yop2')
                                 defilementVersGauche(positionDeux, opacDeux, accueilQuestiontext[i])
                                 accueilQuestionDeux = 1
                             }
@@ -200,7 +201,6 @@
                             let positionTrois = 100
                             let opacTrois = 0
                             if (accueilQuestionTrois == 0) {
-                                console.log('yop3')
                                 defilementVersDroite(positionTrois, opacTrois, accueilQuestiontext[i],)
                                 accueilQuestionTrois = 1
                             }
@@ -209,7 +209,6 @@
                             let positionQuatre = 100
                             let opacQuatre = 0
                             if (accueilQuestionQuatre == 0) {
-                                console.log('yop4')
                                 defilementVersGauche(positionQuatre, opacQuatre, accueilQuestiontext[i])
                                 accueilQuestionQuatre = 1
                             }
@@ -219,7 +218,6 @@
                             let positionCinq = 100
                             let opacCinq = 0
                             if (accueilQuestionCinq == 0) {
-                                console.log('yop5')
                                 defilementVersDroite(positionCinq, opacCinq, accueilQuestiontext[i],)
                                 accueilQuestionCinq = 1
                             }
@@ -231,11 +229,8 @@
                 }
             }
         })
-
-
-
-
     </script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

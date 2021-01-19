@@ -1,4 +1,8 @@
 /* Début du contennu de la page ACCUEIL */
+main{
+    padding-bottom: 100px;
+}
+
 #display_accueil_un{
     display: flex;
     flex-direction: row;
