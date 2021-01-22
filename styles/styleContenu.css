@@ -4,7 +4,7 @@
 /* bleu
     color: rgb(5, 215, 251); */
 
-    
+
 #display_contenu{
     /* border: solid green; */
     width: 80%;
@@ -91,6 +91,7 @@
     display: flex;
     flex-direction: row;
     width: 80%;
+    /* border: green solid; */
 }
 .button_direction{
     text-align: center;
@@ -99,19 +100,67 @@
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    width: 200px;
+    padding: 20px;
+    margin: 5px;
 }
 .button_direction:nth-child(odd) {
     background-color: rgb(255, 173, 0);
-    padding: 20px;
-    margin: 5px;
-    width: 200px;
 }
 .button_direction:nth-child(even){
     background-color: rgb(5, 215, 251);
-    padding: 20px;
+    /* padding: 20px;
     margin: 5px;
-    width: 200px;
+    width: 200px; */
 }
 .shop{
     top:50px;
+}
+
+@media (min-width:600px) and (max-width:1024px){
+  
+}
+@media (max-width:600px){
+    #display_contenu{
+        width: 95%;
+        margin: 20px;
+    }
+    #display_contenu img{
+        width: 100px;
+        margin: 10px;
+    }
+    .contenu_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .contenu_container p{
+        width: 80%;
+        font-size: 10px;
+        text-align: center;
+        /* border: green solid; */
+    }
+    #container_button{
+        display: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    #second_contenu{
+        width: 100%;
+        text-align: center;
+    }
+    #second_contenu p{
+        width: 100%;
+    }
+    .button_direction{
+        font-size: 12px;
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
 }
