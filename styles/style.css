@@ -16,33 +16,6 @@ html {
     padding: 0;
 }
 
-#scroll {
-    color: rgb(255, 173, 0);
-    position: fixed;
-    z-index: 101;
-    font-size: 60px;
-    top: 500px;
-    animation: cli 2s infinite;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-@keyframes cli {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -123,6 +96,20 @@ header {
 }
 
 /* Barre de navigation */
+#button_navigation{
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(25, 25, 25);
+    color: rgb(255, 173, 0);
+    border: solid 0.5px rgb(5, 215, 251);
+    border-radius: 0.1em;
+    padding: 10px;
+    font-family: "League Spartan";
+}
 #rubrique {
     z-index: 100;
     position: sticky;
@@ -220,11 +207,34 @@ footer h1 {
     width: 40px;
     height: 40px;
 }
+/* Partie fenêtre cookie */
+#cookie_display{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+#fenetre_cookie{
+    width: 50%;
+    height: 80%;
+    border: solid rgb(5, 215, 251) 2px;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    font-size: 25px;
+}
 
-
-@media (min-width:600px) and (max-width:1024px) {
+@media (min-width:550px) and (max-width:1024px) {
     header {
-        height: 100vh;
+        height: 91vh;
     }
 
     html {
@@ -233,7 +243,34 @@ footer h1 {
     }
 
     /* Barre de navigation */
-    #rubrique {
+
+    #button_navigation{
+        display: flex;
+        padding: 20px;
+    }
+    #button_navigation span{
+        position: relative;
+        font-size: 20px;
+        transform: scale(2,0.7);
+
+    }
+    #rubrique{
+        /* display: flex; */
+
+        flex-direction: column;
+        top: 0;
+        /* height: 70vh; */
+    }
+    #rubrique a{
+        display: none;
+
+    }
+    #rubrique a button{
+        padding: 15px;
+    }
+
+
+    /* #rubrique {
         z-index: 100;
         position: sticky;
         top: 215px;
@@ -254,7 +291,7 @@ footer h1 {
     #rubrique a button {
         cursor: pointer;
         background-color: rgba(25, 25, 25);
-        /* color: rgb(5, 215, 251); */
+        color: rgb(5, 215, 251);
         color: rgb(255, 173, 0);
         font-size: 20px;
         display: flex;
@@ -276,7 +313,7 @@ footer h1 {
     #rubrique a:hover button {
         transition: all 1s;
         transform: scale(1.1);
-    }
+    } */
 
     #imgHeader {
         z-index: 1;
@@ -285,46 +322,7 @@ footer h1 {
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 110%
-    }
-
-    #enTete {
-        z-index: 3;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    #logo {
-        width: 250px;
-        height: 200px;
-    }
-
-    #rubrique {
-        height: 100px;
-    }
-
-    #titre {
-        margin: 5px;
-    }
-
-    #titre h1 {
-        font-size: 25px;
-        text-align: center;
-    }
-
-    #titre span {
-        font-size: 20px;
-    }
-
-    #titre p {
-        font-size: 20px;
-        text-align: center;
+        background-size: 200%
     }
     footer {
         width: 100%;
@@ -367,12 +365,114 @@ footer h1 {
         width: 40px;
         height: 40px;
     }
+    #fenetre_cookie{
+        width: 90%;
+        height: 90%;
+        background-color: white;
+    }
 
+}
+@media (min-width:550px) and (max-width:1024px) and (min-height: 600px){
+    #logo {
+        width:400px;
+        height: 350px;
+    }
+    #titre {
+        margin: 5px;
+    }
+
+    #titre h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #titre span {
+        font-size: 60px;
+    }
+
+    #titre p {
+        font-size: 30px;
+        text-align: center;
+    }
+    #button_navigation{
+        display: flex;
+        padding: 20px;
+    }
+    #button_navigation span{
+        position: relative;
+        font-size: 20px;
+        transform: scale(2,0.7);
+
+    }
+    #rubrique{
+        top: 0;
+        flex-direction: column;
+        height: 100%;
+    }
+    #rubrique a{
+        display: none;
+    }
+    #rubrique a button{
+        padding: 10px;
+    }
+}
+@media (min-width:550px) and (max-width:1024px) and (max-height: 599px){
+    #enTete {
+        flex-direction: row;
+
+
+    }
+    #logo {
+        width:300px;
+        height: 250px;
+    }
+    #titre {
+        margin: 5px;
+    }
+
+    #titre h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #titre span {
+        font-size: 35px;
+    }
+
+    #titre p {
+        font-size: 20px;
+        text-align: center;
+    }
+    #button_navigation{
+        display: flex;
+        padding: 10px;
+    }
+    #button_navigation span{
+        position: relative;
+        font-size: 20px;
+        transform: scale(2,0.7);
+
+    }
+    #rubrique{
+        top: 0;
+        flex-direction: column;
+        height: 100%;
+    }
+    #rubrique a{
+        display: none;
+        font-size: 10px;
+        /* padding: 10px; */
+    }
 
 }
 
-@media (max-width:600px) {
+@media (max-width:550px) {
+    html{
+        margin: 0%;
+        padding: 0px; 
+    }
     body {
+        margin: 0%;
         padding: 0px;
     }
 
@@ -403,26 +503,40 @@ footer h1 {
 
     main {
         position: relative;
-        /* margin: 30px; */
-        /* height: 100%; */
     }
 
     #enTete {
         margin: 0;
         padding: 0;
         height: 60vh;
-        /* position: relative; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    #button_navigation{
+        display: flex;
+    }
+    #button_navigation span{
+        position: relative;
+        font-size: 20px;
+        transform: scale(2,0.7);
 
-    #rubrique {
+    }
+    #rubrique{
+        top: 0;
+        flex-direction: column;
+        height: 100%;
+    }
+    #rubrique a{
+        display: none;
+
+    }
+    /* #rubrique {
         height: auto;
         top: 0;
-        height: 50vh;
-        display: none;
+        height: 70vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -451,7 +565,7 @@ footer h1 {
         border-radius: 0;
         margin: 0px;
         box-shadow: orangered 3px 3px 10px;
-    }
+    } */
 
     #titre {
         margin: 5px;
@@ -524,7 +638,11 @@ footer h1 {
         width: 30px;
         height: 30px;
     }
-
+    #fenetre_cookie{
+        width: 90%;
+        height: 90%;
+        background-color: white;
+    }
 
 
 

@@ -28,6 +28,7 @@
 
     </header>
     <article id="rubrique">
+        <section id="button_navigation"><span>v</span></section>
         <a href="index.html"><button><span>ACCUEIL</span></button></a>
         <a href="contenu.html"><button><span>NOTRE FORMATION</span></button></a>
         <a href="sessions.html"><button><span>NOS SESSIONS</span></button></a>
@@ -132,6 +133,10 @@
 
         // variable on/off pour chaque acceuilQuestion
 
+if (window.matchMedia("(min-width: 550px)").matches) {
+  /* La largeur minimum de l'affichage est 600 px inclus */
+
+
         let accueilQuestionUn = 0
         let accueilQuestionDeux = 0
         let accueilQuestionTrois = 0
@@ -226,6 +231,9 @@
                 }
             }
         })
+    } else {
+  /* L'affichage est inférieur à 600px de large */
+}
     </script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
