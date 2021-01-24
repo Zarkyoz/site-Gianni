@@ -173,6 +173,7 @@ main {
         margin-right: 0%;
         padding-right: 10px;
         padding-left: 10px;
+        box-shadow: 5px 5px 15px black;
     }
 
     .accueil_question:nth-child(even) h2 {

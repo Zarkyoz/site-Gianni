@@ -174,11 +174,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    /* padding-top: 100px; */
+
 }
 
 footer h1 {
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px;
     margin: 0;
     color: rgb(0, 0, 0);
@@ -190,7 +191,7 @@ footer h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: 100%;
     padding-bottom: 20px;
 }
@@ -204,8 +205,8 @@ footer h1 {
 }
 
 #social img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 /* Partie fenêtre cookie */
 #cookie_display{
@@ -231,7 +232,20 @@ footer h1 {
     background-color: white;
     font-size: 25px;
 }
-
+#container_construction{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#container_construction img{
+    width: 50%;
+}
+#container_construction p{
+    text-align: center;
+    color: rgb(5, 215, 251);
+    font-size: 50px; 
+}
 @media (min-width:550px) and (max-width:1024px) {
     header {
         height: 91vh;
@@ -268,53 +282,6 @@ footer h1 {
     #rubrique a button{
         padding: 15px;
     }
-
-
-    /* #rubrique {
-        z-index: 100;
-        position: sticky;
-        top: 215px;
-        width: 100%;
-        height: 50px;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #rubrique a {
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-    }
-
-    #rubrique a button {
-        cursor: pointer;
-        background-color: rgba(25, 25, 25);
-        color: rgb(5, 215, 251);
-        color: rgb(255, 173, 0);
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        border: solid 0.5px rgb(5, 215, 251);
-        border-radius: 0.1em;
-        padding: 30px;
-        font-family: "League Spartan";
-    }
-
-    #rubrique a:hover {
-        transition: all 1s;
-        transform: scale(1.1);
-    }
-
-    #rubrique a:hover button {
-        transition: all 1s;
-        transform: scale(1.1);
-    } */
-
     #imgHeader {
         z-index: 1;
         position: absolute;
@@ -332,18 +299,16 @@ footer h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
 
     footer h1 {
         font-size: 20px;
-        /* padding: 10px; */
         margin: 0;
         color: rgb(0, 0, 0);
-        /* padding-top: 20px; */
     }
 
-    .reseau {
+    /* .reseau {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -364,13 +329,24 @@ footer h1 {
     #social img {
         width: 40px;
         height: 40px;
-    }
-    #fenetre_cookie{
+    } */
+    /* #fenetre_cookie{
         width: 90%;
         height: 90%;
         background-color: white;
-    }
+    } */
 
+
+    /* phase de construction */
+
+    #container_construction img{
+        width: 70%;
+    }
+    #container_construction p{
+        text-align: center;
+        color: rgb(5, 215, 251);
+        font-size: 40px; 
+    }
 }
 @media (min-width:550px) and (max-width:1024px) and (min-height: 600px){
     #logo {
@@ -532,41 +508,6 @@ footer h1 {
         display: none;
 
     }
-    /* #rubrique {
-        height: auto;
-        top: 0;
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #rubrique a {
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-    }
-
-    #rubrique a button {
-        font-size: 10px;
-        width: 100%;
-        height: 100%;
-        border: solid 0.5px rgb(5, 215, 251);
-        border-radius: 0.1em;
-        padding: 10px;
-        font-family: "League Spartan";
-    }
-
-    #rubrique section {
-        width: 100%;
-        height: 15px;
-        font-size: 10px;
-        border-radius: 0;
-        margin: 0px;
-        box-shadow: orangered 3px 3px 10px;
-    } */
-
     #titre {
         margin: 5px;
         padding: 0;
@@ -609,14 +550,13 @@ footer h1 {
     }
 
     footer h1 {
-        font-size: 10px;
-        /* padding: 10px; */
+        font-size: 20px;
         margin: 0;
         color: rgb(0, 0, 0);
-        /* padding-top: 20px; */
+      
     }
-
-    .reseau {
+/*
+     .reseau {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -637,13 +577,22 @@ footer h1 {
     #social img {
         width: 30px;
         height: 30px;
-    }
-    #fenetre_cookie{
+    } */
+    /* #fenetre_cookie{
         width: 90%;
         height: 90%;
         background-color: white;
-    }
+    } */
 
+   /* phase de construction */
 
+   #container_construction img{
+    width: 100%;
+}
+#container_construction p{
+    text-align: center;
+    color: rgb(5, 215, 251);
+    font-size: 30px; 
+}
 
 }

@@ -1,50 +1,67 @@
-// document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
-// Cookie
+// // document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+// // Cookie
+// let cookieChecked = document.cookie.substring(0, document.cookie.indexOf("="))
+// let cookieCheckedDeux = ""
+// if (cookieChecked != "") {
+//         cookieCheckedDeux = decodeURIComponent(document.cookie.substring(document.cookie.indexOf("=")+1))
+// }
 
-// fenetre de cookie
-let cookieChecked =""
+// if (cookieCheckedDeux != "") {
+
+// } else { // fenetre de cookie
+//         let body = document.querySelector('body')
+//         let cookieDisplay = document.createElement('article')
+//         body.appendChild(cookieDisplay)
+//         cookieDisplay.id = "cookie_display"
+
+//         let fenetreCookie = document.createElement('section')
+//         cookieDisplay.appendChild(fenetreCookie)
+//         fenetreCookie.id = "fenetre_cookie"
+//         let textCookie = document.createElement('p')
+//         let buttonCookie = document.createElement('article')
+//         fenetreCookie.appendChild(textCookie)
+//         textCookie.innerHTML = "je suis un cookie"
+//         fenetreCookie.appendChild(buttonCookie)
+//         let buttonCookieValidation = document.createElement('button')
+//         let buttonCookieRefus = document.createElement('button')
+//         buttonCookie.appendChild(buttonCookieValidation)
+//         buttonCookieValidation.textContent = "accepter"
+//         buttonCookie.appendChild(buttonCookieRefus)
+//         buttonCookieRefus.textContent = "refuser"
+//         // document.cookie = cookieChecked
+//         // S'il accepte le cookie, enregistre le cookie et la question n'ai plus demander à la prochaine venu
+//         buttonCookieValidation.addEventListener('click', () => {
+//                 // document.cookie = "username=John Doe; expires=Thu, 18 Dec 2021 12:00:00 UTC; path=/";
+//                 console.log('validation')
+//                 function setCookie(name, value = "&§", expires = "", path = "", domain = "", secure = 0) {
+//                         document.cookie = name + "=" + encodeURIComponent(value) +
+//                         ((expires == "") ? "" : (";expires=" + expires.toUTCString())) +
+//                         ((path == "") ? "" : (";path=" + path)) +
+//                         ((secure == true) ? ";secure" : "")
+//                 }
+//                 // La ligne en commentaire juste en dessous permet d'effacer le cookie
+//                 // let dt1An = new Date("2000-01-01")
+//                 let dt1An = new Date()
+//                 dt1An.setTime(dt1An.getTime() + (365 * 24 * 3600 * 1000))
+//                 // durée de vie 1 an
+//                 let today = new Date()
+//                 console.log(dt1An + "  " + today)
+//                 setCookie("firstVisiteCookie", today.getTime(), dt1An)
+//                 body.removeChild(cookieDisplay)
+
+//         })
+//         // S'il refuse le cookie, enlève la fenêtre et repose la question la prochaine fois qu'il revient
+//         buttonCookieRefus.addEventListener('click', () => {
+//                 body.removeChild(cookieDisplay)
+//         })
+// }
 
 
-if (cookieChecked != "") {
-
-} else {
-        let body = document.querySelector('body')
-        let cookieDisplay = document.createElement('article')
-        body.appendChild(cookieDisplay)
-        cookieDisplay.id = "cookie_display"
-
-        let fenetreCookie = document.createElement('section')
-        cookieDisplay.appendChild(fenetreCookie)
-        fenetreCookie.id = "fenetre_cookie"
-        let textCookie = document.createElement('p')
-        let buttonCookie = document.createElement('article')
-        fenetreCookie.appendChild(textCookie)
-        textCookie.innerHTML = "je suis un cookie"
-        fenetreCookie.appendChild(buttonCookie)
-        let buttonCookieValidation = document.createElement('button')
-        let buttonCookieRefus = document.createElement('button')
-        buttonCookie.appendChild(buttonCookieValidation)
-        buttonCookieValidation.textContent = "accepter"
-        buttonCookie.appendChild(buttonCookieRefus)
-        buttonCookieRefus.textContent = "refuser"
-        // document.cookie = cookieChecked
-        // S'il accepte le cookie, enregistre le cookie et la question n'ai plus demander à la prochaine venu
-        buttonCookieValidation.addEventListener('click', () => {
-                document.cookie = "username=John Doe; expires=Thu, 18 Dec 2021 12:00:00 UTC; path=/";
-                console.log('validation')
-        })
-        // S'il refuse le cookie, enlève la fenêtre et repose la question la prochaine fois qu'il revient
-        buttonCookieRefus.addEventListener('click', () => {
-                body.removeChild(cookieDisplay)
-        })
-}
 
 
-
-
-var date = new Date()
-var newdate = date.toUTCString()
-console.log(newdate)
+// var date = new Date()
+// var newdate = date.toUTCString()
+// console.log(newdate)
 
 
 // barre de navigation quand l'ecran est plus petit...
