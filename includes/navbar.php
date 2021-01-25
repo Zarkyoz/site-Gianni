@@ -3,7 +3,7 @@
         <article id="headerSombre"></article>
         <article id="enTete">
             <section>
-                <img src="images/logo.png" id="logo" alt="">
+                <img src="images/logoUn.png" id="logo" alt="">
             </section>
             <section id="titre">
                 <h1>ANIM <span>G</span> FORMATION</h1>
@@ -13,7 +13,7 @@
         
 </header>
 <article id="rubrique">
-    <section id="button_navigation"><span>v</span></section>
+    <section id="button_navigation"><span></span><span></span><span></span><p>MENU</p></section>
     <a href="index.php"><button><span>ACCUEIL</span></button></a>
     <a href="contenu.php"><button><span>NOTRE FORMATION</span></button></a>
     <a href="sessions.php"><button><span>NOS SESSIONS</span></button></a>

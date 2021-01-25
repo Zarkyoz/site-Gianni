@@ -22,7 +22,7 @@
                 <article class="contenu_container">
                     <img src="images/contenue_1.png" alt="">
                     <p>FORMATION CERTIFIE QUALIOPI<br>
-                        ET REALISEE PAR DES PROFESSIONNEL DE L'ANIMATION TOURISTIQUE</p>
+                        ET REALISEE PAR DES PROFESSIONNELS DE L'ANIMATION TOURISTIQUE</p>
                 </article>
 
                 <article class="contenu_container">
@@ -106,7 +106,7 @@
                     <img src="images/contenue_3.jpg" alt="">
                     <p> NOTRE FORMATION SE DEROULE EN VISIOCONFERENCE <br>
                         UN LIEN PERSONNEL VOUS EST ATTRIBUE <br>
-                        VOUS REJOINDREZ UN GROUPE DE 6 ELEVES MAXIMUM PAR SESSION <br>
+                        VOUS REJOINDREZ UN GROUPE DE 8 ELEVES MAXIMUM PAR SESSION <br>
                         ET UN DE NOS 2 FORMATEURS VOUS SERA ATTITRE <br>
                         <br>
                         VOUS DEVEZ ÊTRE MUNI D'UN ORDINATEUR, D'UNE WEBCAM, D'UN MICRO FONCTIONNEL, ET BIEN SUR, UNE
@@ -118,10 +118,10 @@
 
                     <img src="images/contenue_4.jpg" alt="">
                     <section id="container_button" id="poste_question">
-                        <a href="tarif.html" class="button_direction">FINANCEMENT</a>
-                        <a href="recrutement.html" class="button_direction">RECRUTEMENT</a>
-                        <a href="sessions.html" class="button_direction">DATES DES SESSIONS</a>
-                        <a href="qui.html" class="button_direction">NOUS CONTACTER</a>
+                        <a href="tarif.php" class="button_direction">FINANCEMENT</a>
+                        <a href="recrutement.php" class="button_direction">RECRUTEMENT</a>
+                        <a href="sessions.php" class="button_direction">DATES DES SESSIONS</a>
+                        <a href="qui.php" class="button_direction">NOUS CONTACTER</a>
                     </section>
                 </article>
             </section>

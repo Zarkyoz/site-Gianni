@@ -73,7 +73,7 @@ buttonNavigation.addEventListener('click', () => {
         if (navActive == false) {
                 navActive = true
                 for (let bn = 0; bn < navBarre.children.length; bn++) {
-                        buttonNavigation.children[0].style.transform = "rotate(180deg) scale(2,0.5)"
+                        // buttonNavigation.children[0].style.transform = "rotate(180deg) scale(2,0.5)"
                         navBarre.children[bn].style.display = "flex"
                 }
         } else if (navActive == true) {
@@ -82,7 +82,7 @@ buttonNavigation.addEventListener('click', () => {
                         navBarre.children[bn].style.display = "none"
                 }
                 navBarre.children[0].style.display = "flex"
-                buttonNavigation.children[0].style.transform = "rotate(0deg) scale(2,0.5)"
+                // buttonNavigation.children[0].style.transform = "rotate(0deg) scale(2,0.5)"
         }
 })
 

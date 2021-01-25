@@ -232,6 +232,8 @@ footer h1 {
     background-color: white;
     font-size: 25px;
 }
+
+/* Partie site en travaux */
 #container_construction{
 display: flex;
 flex-direction: column;
@@ -260,19 +262,35 @@ align-items: center;
 
     #button_navigation{
         display: flex;
-        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     #button_navigation span{
-        position: relative;
-        font-size: 20px;
-        transform: scale(2,0.7);
+        /* position: relative; */
+        z-index: 170;
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        background-color: rgb(255, 173, 0);
+        background-color: rgb(5, 215, 251);
+        /* font-size: 10px; */
+        /* transform: scale(2,0.7); */
 
+    }
+    #button_navigation p{
+        /* position: relative; */
+        margin: 2px;
+        color: rgb(5, 215, 251);
+        color: rgb(255, 173, 0);
+        font-size: 10px;
     }
     #rubrique{
         /* display: flex; */
 
         flex-direction: column;
-        top: 0;
+        top: 0px;
         /* height: 70vh; */
     }
     #rubrique a{
@@ -348,7 +366,7 @@ align-items: center;
         font-size: 40px; 
     }
 }
-@media (min-width:550px) and (max-width:1024px) and (min-height: 600px){
+@media (min-width:550px) and (max-width:1024px) and (min-height: 550px){
     #logo {
         width:400px;
         height: 350px;
@@ -381,7 +399,7 @@ align-items: center;
 
     }
     #rubrique{
-        top: 0;
+        top: 0px;
         flex-direction: column;
         height: 100%;
     }
@@ -392,7 +410,7 @@ align-items: center;
         padding: 10px;
     }
 }
-@media (min-width:550px) and (max-width:1024px) and (max-height: 599px){
+@media (min-width:550px) and (max-width:1024px) and (max-height: 550px){
     #enTete {
         flex-direction: row;
 
@@ -421,16 +439,32 @@ align-items: center;
     }
     #button_navigation{
         display: flex;
-        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     #button_navigation span{
-        position: relative;
-        font-size: 20px;
-        transform: scale(2,0.7);
+        /* position: relative; */
+        z-index: 170;
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        background-color: rgb(255, 173, 0);
+        background-color: rgb(5, 215, 251);
+        /* font-size: 10px; */
+        /* transform: scale(2,0.7); */
 
     }
+    #button_navigation p{
+        /* position: relative; */
+        margin: 2px;
+        color: rgb(5, 215, 251);
+        color: rgb(255, 173, 0);
+        font-size: 10px;
+    }
     #rubrique{
-        top: 0;
+        top:0px;
         flex-direction: column;
         height: 100%;
     }
@@ -439,6 +473,7 @@ align-items: center;
         font-size: 10px;
         /* padding: 10px; */
     }
+    
 
 }
 
@@ -492,21 +527,47 @@ align-items: center;
     }
     #button_navigation{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     #button_navigation span{
-        position: relative;
-        font-size: 20px;
-        transform: scale(2,0.7);
+        /* position: relative; */
+        z-index: 170;
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        background-color: rgb(255, 173, 0);
+        background-color: rgb(5, 215, 251);
+        /* font-size: 10px; */
+        /* transform: scale(2,0.7); */
 
     }
+    #button_navigation p{
+        /* position: relative; */
+        margin: 2px;
+        color: rgb(5, 215, 251);
+        color: rgb(255, 173, 0);
+        font-size: 10px;
+    }
     #rubrique{
-        top: 0;
+        top: 0px;
         flex-direction: column;
         height: 100%;
     }
     #rubrique a{
         display: none;
 
+    }
+    #rubrique a:hover {
+        transition: all 1s;
+        transform: scale(1);
+    }
+    
+    #rubrique a:hover button {
+        transition: all 1s;
+        transform: scale(1);
     }
     #titre {
         margin: 5px;
