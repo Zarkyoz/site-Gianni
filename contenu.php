@@ -12,29 +12,9 @@
 </head>
 
 <body>
-    <header>
-        <article id="imgHeader"></article>
-        <article id="headerSombre"></article>
-        <article id="enTete">
-            <section>
-                <img src="images/logo.png" id="logo" alt="">
-            </section>
-            <section id="titre">
-                <h1>ANIM <span>G</span> FORMATION</h1>
-                <p>Formation à distance d'animateurs touristiques</p>
-            </section>
-        </article>
-
-    </header>
-    <article id="rubrique">
-        <section id="button_navigation"><span>v</span></section>
-        <a href="index.html"><button><span>ACCUEIL</span></button></a>
-        <a href="contenu.html"><button><span>NOTRE FORMATION</span></button></a>
-        <a href="sessions.html"><button><span>NOS SESSIONS</span></button></a>
-        <a href="recrutement.html"><button><span>RECRUTEMENT</span></button></a>
-        <a href="qui.html"><button><span>QUI SOMMES NOUS ?</span></button></a>
-        <a href="tarif.html"><button><span>FINANCEMENT</span></button></a>
-    </article>
+    <?php
+        include_once "includes/navbar.php"
+    ?>
     <main>
         <article id="display_contenu">
             <section id="first_contenu">
@@ -155,25 +135,9 @@
 
     </main>
     <footer>
-        <!-- <h1>NOS PARTENAIRES</h1>
-        <article class="reseau" id="partenaire">
-            <span>FRAM</span>
-            <img src="images/fram.png" alt="fram">
-            <span>MISSION LOCALE DE DOUAI</span>
-            <img src="images/ML-douais.png" alt="MLDouais">
-            <span>POLE EMPLOI</span>
-            <img src="images/pole-emploi.png" alt="pole-emploi"> 
-        </article>-->
-
-        <h1>NOS RESEAUX</h1>
-        <article class="reseau" id="social">
-            <!-- <span>facebook</span> -->
-            <a href="https://www.facebook.com/animgformation"><img src="images/facebook.png" alt="facebook"></a>
-            <!-- <span>indeed</span> -->
-            <img src="images/instagram.png" alt="instagram">
-            <!-- <span>INSTAGRAM</span> -->
-            <a href="http://www.LinkedIn.com/in/animgformation"><img src="images/indeed.png" alt="indeed"></a>
-        </article>
+    <?php
+            include_once "includes/footer.php"
+        ?>
     </footer>
     <!-- <script src="app.js"></script> -->
     <!-- <script type="text/javascript" src="calendrier.js"></script> -->

@@ -23,17 +23,12 @@
                 <p>Formation à distance d'animateurs touristiques</p>
             </section>
         </article>
-        
+
     </header>
-    <article id="rubrique">
-        <section id="button_navigation"><span>v</span></section>
-        <a href="index.html"><button><span>ACCUEIL</span></button></a>
-        <a href="contenu.html"><button><span>NOTRE FORMATION</span></button></a>
-        <a href="sessions.html"><button><span>NOS SESSIONS</span></button></a>
-        <a href="recrutement.html"><button><span>RECRUTEMENT</span></button></a>
-        <a href="qui.html"><button><span>QUI SOMMES NOUS ?</span></button></a>
-        <a href="tarif.html"><button><span>FINANCEMENT</span></button></a>
-    </article>
+    <?php
+        include_once "includes/navbar.php"
+    ?>
+
     <main>
         <article id="container_construction">
             <img src="images/logo.png" alt="">
@@ -62,7 +57,6 @@
         </article>
     </footer>
     <script type="text/javascript" src="js/app.js"></script>
-    <!-- <script type="text/javascript" src="calendrier.js"></script> -->
 </body>
 
 </html>
