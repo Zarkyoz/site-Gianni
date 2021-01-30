@@ -1,0 +1,40 @@
+main{
+    padding-top: 50px;
+}
+#display_recrutement{
+    width: 80%;
+    height: 100vh;
+    padding-top: 50px;
+    background-color: white;
+}
+#display_titre{
+    text-align: center;
+    color: rgb(255, 173, 0);
+    font-size: 30px;
+}
+/* .container_recrutement form label{
+margin: 20px;
+} */
+#container_recrutement_un {
+    display: flex;
+    flex-direction: column;
+}
+#container_recrutement_deux {
+    display: none;
+    }
+#btn_suivant{
+    background-color: rgb(255, 173, 0);
+    /* color:rgb(5, 215, 251);
+    background-color: rgb(5, 215, 251);
+    color:rgb(255, 173, 0);
+    font-size: large; */
+}
+#btn_precedent{
+    background-color: rgb(255, 173, 0);
+}
+#btn_submit{
+    background-color: green;
+}
+/* input:invalid{
+    border: dashed 2px rgb(5, 215, 251);;
+} */

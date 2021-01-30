@@ -538,7 +538,7 @@ align-items: center;
         width: 20px;
         height: 3px;
         margin: 2px;
-        background-color: rgb(255, 173, 0);
+        /* background-color: rgb(255, 173, 0); */
         background-color: rgb(5, 215, 251);
         /* font-size: 10px; */
         /* transform: scale(2,0.7); */

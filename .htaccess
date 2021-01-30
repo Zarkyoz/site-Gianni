@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^accueil$  /index.php
+RewriteRule ^contenu_de_la_formation$  /contenu.php
+RewriteRule ^nos_sessions$  /sessions.php
+RewriteRule ^recrutement$  /recrutement.php
+RewriteRule ^qui_sommes_nous$  /qui.php
+RewriteRule ^financement$  /tarif.php
